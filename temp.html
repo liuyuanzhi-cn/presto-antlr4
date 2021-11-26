@@ -1,0 +1,7292 @@
+<!DOCTYPE html><html>
+      <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/static/bootstrap.min.css" type="text/css"/><link rel="stylesheet" href="/static/vis-timeline-graph2d.min.css" type="text/css"/><link rel="stylesheet" href="/static/webui.css" type="text/css"/><link rel="stylesheet" href="/static/timeline-view.css" type="text/css"/><script src="/static/sorttable.js"></script><script src="/static/jquery-3.5.1.min.js"></script><script src="/static/vis-timeline-graph2d.min.js"></script><script src="/static/bootstrap.bundle.min.js"></script><script src="/static/initialize-tooltips.js"></script><script src="/static/table.js"></script><script src="/static/timeline-view.js"></script><script src="/static/log-view.js"></script><script src="/static/webui.js"></script><script>setUIRoot('')</script>
+        
+        <link rel="shortcut icon" href="/static/spark-logo-77x50px-hd.png"></link>
+        <title>Spark Master at spark://bigdata02:7077</title>
+      </head>
+      <body>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <h3 style="vertical-align: middle; display: inline-block;">
+                <a style="text-decoration: none" href="/">
+                  <img src="/static/spark-logo-77x50px-hd.png"/>
+                  <span class="version" style="margin-right: 15px;">3.1.1</span>
+                </a>
+                Spark Master at spark://bigdata02:7077
+              </h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="row">
+          <div class="col-12">
+            <ul class="list-unstyled">
+              <li><strong>URL:</strong> spark://bigdata02:7077</li>
+              <li>
+                    <strong>REST URL:</strong> spark://bigdata02:16066
+                    <span class="rest-uri"> (cluster mode)</span>
+                  </li>
+              <li><strong>Alive Workers:</strong> 3</li>
+              <li><strong>Cores in use:</strong> 192 Total,
+                48 Used</li>
+              <li><strong>Memory in use:</strong>
+                372.2 GiB Total,
+                140.0 GiB Used</li>
+              <li><strong>Resources in use:</strong>
+                </li>
+              <li><strong>Applications:</strong>
+                3 <a href="#running-app">Running</a>,
+                185 <a href="#completed-app">Completed</a> </li>
+              <li><strong>Drivers:</strong>
+                0 Running,
+                185 Completed </li>
+              <li><strong>Status:</strong> ALIVE</li>
+            </ul>
+          </div>
+        </div><div class="row">
+          <div class="col-12">
+            <span class="collapse-aggregated-workers collapse-table" onClick="collapseTable('collapse-aggregated-workers','aggregated-workers')">
+              <h4>
+                <span class="collapse-table-arrow arrow-open"></span>
+                <a>Workers (3)</a>
+              </h4>
+            </span>
+            <div class="aggregated-workers collapsible-table">
+              <table class="table table-bordered table-sm table-striped sortable">
+      <thead><th width="" class="">Worker Id</th><th width="" class="">Address</th><th width="" class="">State</th><th width="" class="">Cores</th><th width="" class="">Memory</th><th width="" class="">Resources</th></thead>
+      <tbody>
+        <tr>
+      <td>
+        <a href="http://10.232.3.217:8081">
+              worker-20211008172707-10.232.3.217-34089
+            </a>
+      </td>
+      <td>10.232.3.217:34089</td>
+      <td>ALIVE</td>
+      <td>64 (17 Used)</td>
+      <td sorttable_customkey="127040.49152">
+        124.1 GiB
+        (48.0 GiB Used)
+      </td>
+      <td></td>
+    </tr><tr>
+      <td>
+        <a href="http://10.232.3.220:8081">
+              worker-20211008172707-10.232.3.220-42856
+            </a>
+      </td>
+      <td>10.232.3.220:42856</td>
+      <td>ALIVE</td>
+      <td>64 (18 Used)</td>
+      <td sorttable_customkey="127040.49152">
+        124.1 GiB
+        (48.0 GiB Used)
+      </td>
+      <td></td>
+    </tr><tr>
+      <td>
+        <a href="http://10.232.3.221:8081">
+              worker-20211008172707-10.232.3.221-41595
+            </a>
+      </td>
+      <td>10.232.3.221:41595</td>
+      <td>ALIVE</td>
+      <td>64 (13 Used)</td>
+      <td sorttable_customkey="127040.45056">
+        124.1 GiB
+        (44.0 GiB Used)
+      </td>
+      <td></td>
+    </tr>
+      </tbody>
+    </table>
+            </div>
+          </div>
+        </div><div class="row">
+          <div class="col-12">
+            <span id="running-app" class="collapse-aggregated-activeApps collapse-table" onClick="collapseTable('collapse-aggregated-activeApps','aggregated-activeApps')">
+              <h4>
+                <span class="collapse-table-arrow arrow-open"></span>
+                <a>Running Applications (3)</a>
+              </h4>
+            </span>
+            <div class="aggregated-activeApps collapsible-table">
+              <table class="table table-bordered table-sm table-striped sortable">
+      <thead><th width="" class="">Application ID</th><th width="" class="">Name</th><th width="" class="">Cores</th><th width="" class="">Memory per Executor</th><th width="" class="">Resources Per Executor</th><th width="" class="">Submitted Time</th><th width="" class="">User</th><th width="" class="">State</th><th width="" class="">Duration</th></thead>
+      <tbody>
+        <tr>
+      <td>
+        <a href="app?appId=app-20211126171540-3373">app-20211126171540-3373</a>
+        <form action="app/kill/" method="POST" style="display:inline">
+        <input type="hidden" name="id" value="app-20211126171540-3373"/>
+        <input type="hidden" name="terminate" value="true"/>
+        <a href="#" onclick="if (window.confirm('Are you sure you want to kill application app-20211126171540-3373 ?')) { this.parentNode.submit(); return true; } else { return false; }" class="kill-link">(kill)</a>
+      </form>
+      </td>
+      <td>
+        <a href="http://bigdata02:4046">TEST</a>
+      </td>
+      <td>
+        8
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 17:15:40</td>
+      <td>zhongtai</td>
+      <td>RUNNING</td>
+      <td>25 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126152714-3359">app-20211126152714-3359</a>
+        <form action="app/kill/" method="POST" style="display:inline">
+        <input type="hidden" name="id" value="app-20211126152714-3359"/>
+        <input type="hidden" name="terminate" value="true"/>
+        <a href="#" onclick="if (window.confirm('Are you sure you want to kill application app-20211126152714-3359 ?')) { this.parentNode.submit(); return true; } else { return false; }" class="kill-link">(kill)</a>
+      </form>
+      </td>
+      <td>
+        <a href="http://bigdata02:4043">Spark shell</a>
+      </td>
+      <td>
+        16
+      </td>
+      <td sorttable_customkey="32768">
+        32.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 15:27:14</td>
+      <td>zhongtai</td>
+      <td>RUNNING</td>
+      <td>2.2 h</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211116104611-2887">app-20211116104611-2887</a>
+        <form action="app/kill/" method="POST" style="display:inline">
+        <input type="hidden" name="id" value="app-20211116104611-2887"/>
+        <input type="hidden" name="terminate" value="true"/>
+        <a href="#" onclick="if (window.confirm('Are you sure you want to kill application app-20211116104611-2887 ?')) { this.parentNode.submit(); return true; } else { return false; }" class="kill-link">(kill)</a>
+      </form>
+      </td>
+      <td>
+        <a href="http://bigdata02:4040">Thrift JDBC/ODBC Server</a>
+      </td>
+      <td>
+        24
+      </td>
+      <td sorttable_customkey="12288">
+        12.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/16 10:46:11</td>
+      <td>zhongtai</td>
+      <td>RUNNING</td>
+      <td>246.9 h</td>
+    </tr>
+      </tbody>
+    </table>
+            </div>
+          </div>
+        </div><div>
+          <div class="row">
+               <div class="col-12">
+                 <span class="collapse-aggregated-activeDrivers collapse-table" onClick="collapseTable('collapse-aggregated-activeDrivers',
+                     'aggregated-activeDrivers')">
+                   <h4>
+                     <span class="collapse-table-arrow arrow-open"></span>
+                     <a>Running Drivers (0)</a>
+                   </h4>
+                 </span>
+                 <div class="aggregated-activeDrivers collapsible-table">
+                   <table class="table table-bordered table-sm table-striped sortable">
+      <thead><th width="" class="">Submission ID</th><th width="" class="">Submitted Time</th><th width="" class="">Worker</th><th width="" class="">State</th><th width="" class="">Cores</th><th width="" class="">Memory</th><th width="" class="">Resources</th><th width="" class="">Main Class</th><th width="" class="">Duration</th></thead>
+      <tbody>
+        
+      </tbody>
+    </table>
+                 </div>
+               </div>
+             </div>
+        </div><div class="row">
+          <div class="col-12">
+            <span id="completed-app" class="collapse-aggregated-completedApps collapse-table" onClick="collapseTable('collapse-aggregated-completedApps',
+                'aggregated-completedApps')">
+              <h4>
+                <span class="collapse-table-arrow arrow-open"></span>
+                <a>Completed Applications (185)</a>
+              </h4>
+            </span>
+            <div class="aggregated-completedApps collapsible-table">
+              <table class="table table-bordered table-sm table-striped sortable">
+      <thead><th width="" class="">Application ID</th><th width="" class="">Name</th><th width="" class="">Cores</th><th width="" class="">Memory per Executor</th><th width="" class="">Resources Per Executor</th><th width="" class="">Submitted Time</th><th width="" class="">User</th><th width="" class="">State</th><th width="" class="">Duration</th></thead>
+      <tbody>
+        <tr>
+      <td>
+        <a href="app?appId=app-20211126171010-3372">app-20211126171010-3372</a>
+        
+      </td>
+      <td>
+        express_gbupload_etctu
+      </td>
+      <td>
+        8
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 17:10:10</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>21 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126171751-3374">app-20211126171751-3374</a>
+        
+      </td>
+      <td>
+        Spark shell
+      </td>
+      <td>
+        16
+      </td>
+      <td sorttable_customkey="32768">
+        32.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 17:17:51</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>6.0 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126165745-3366">app-20211126165745-3366</a>
+        
+      </td>
+      <td>
+        Spark shell
+      </td>
+      <td>
+        16
+      </td>
+      <td sorttable_customkey="32768">
+        32.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 16:57:45</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>26 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126171009-3371">app-20211126171009-3371</a>
+        
+      </td>
+      <td>
+        express_gbupload_viu
+      </td>
+      <td>
+        8
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 17:10:09</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>8.9 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126161917-3363">app-20211126161917-3363</a>
+        
+      </td>
+      <td>
+        delta-streamer-ods_etc_project_etccardbusiness
+      </td>
+      <td>
+        16
+      </td>
+      <td sorttable_customkey="8192">
+        8.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 16:19:17</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>58 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126170011-3369">app-20211126170011-3369</a>
+        
+      </td>
+      <td>
+        express_trc_exetcpu
+      </td>
+      <td>
+        8
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 17:00:11</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>1.0 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126170011-3370">app-20211126170011-3370</a>
+        
+      </td>
+      <td>
+        express_trc_viu
+      </td>
+      <td>
+        8
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 17:00:11</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>52 s</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126170010-3367">app-20211126170010-3367</a>
+        
+      </td>
+      <td>
+        express_trc_enpu
+      </td>
+      <td>
+        8
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 17:00:10</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>48 s</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126170011-3368">app-20211126170011-3368</a>
+        
+      </td>
+      <td>
+        express_trc_otu
+      </td>
+      <td>
+        8
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 17:00:11</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>43 s</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126163643-3365">app-20211126163643-3365</a>
+        
+      </td>
+      <td>
+        TEST
+      </td>
+      <td>
+        8
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 16:36:43</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>9.7 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126163445-3364">app-20211126163445-3364</a>
+        
+      </td>
+      <td>
+        Spark shell
+      </td>
+      <td>
+        16
+      </td>
+      <td sorttable_customkey="32768">
+        32.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 16:34:45</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>2.6 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126151401-3358">app-20211126151401-3358</a>
+        
+      </td>
+      <td>
+        TEST
+      </td>
+      <td>
+        8
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 15:14:01</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>1.2 h</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126155110-3362">app-20211126155110-3362</a>
+        
+      </td>
+      <td>
+        Spark shell
+      </td>
+      <td>
+        16
+      </td>
+      <td sorttable_customkey="32768">
+        32.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 15:51:10</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>27 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126154910-3361">app-20211126154910-3361</a>
+        
+      </td>
+      <td>
+        delta-streamer-ods_etc_project_etcobubusiness
+      </td>
+      <td>
+        4
+      </td>
+      <td sorttable_customkey="12288">
+        12.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 15:49:10</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>25 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126150918-3356">app-20211126150918-3356</a>
+        
+      </td>
+      <td>
+        Spark shell
+      </td>
+      <td>
+        16
+      </td>
+      <td sorttable_customkey="32768">
+        32.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 15:09:18</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>41 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126154233-3360">app-20211126154233-3360</a>
+        
+      </td>
+      <td>
+        delta-streamer-ods_etc_project_etcobubusiness
+      </td>
+      <td>
+        4
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 15:42:33</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>26 s</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126151007-3357">app-20211126151007-3357</a>
+        
+      </td>
+      <td>
+        pluginApp
+      </td>
+      <td>
+        8
+      </td>
+      <td sorttable_customkey="8192">
+        8.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 15:10:07</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>3 s</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126150543-3355">app-20211126150543-3355</a>
+        
+      </td>
+      <td>
+        Spark shell
+      </td>
+      <td>
+        16
+      </td>
+      <td sorttable_customkey="32768">
+        32.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 15:05:43</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>3.1 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126141323-3350">app-20211126141323-3350</a>
+        
+      </td>
+      <td>
+        Spark shell
+      </td>
+      <td>
+        16
+      </td>
+      <td sorttable_customkey="32768">
+        32.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 14:13:23</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>51 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126150245-3354">app-20211126150245-3354</a>
+        
+      </td>
+      <td>
+        Spark shell
+      </td>
+      <td>
+        0
+      </td>
+      <td sorttable_customkey="32768">
+        32.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 15:02:45</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>2.0 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126144849-3353">app-20211126144849-3353</a>
+        
+      </td>
+      <td>
+        Spark shell
+      </td>
+      <td>
+        16
+      </td>
+      <td sorttable_customkey="32768">
+        32.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 14:48:49</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>9.2 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126143021-3352">app-20211126143021-3352</a>
+        
+      </td>
+      <td>
+        pluginApp
+      </td>
+      <td>
+        8
+      </td>
+      <td sorttable_customkey="8192">
+        8.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 14:30:21</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>24 s</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126142749-3351">app-20211126142749-3351</a>
+        
+      </td>
+      <td>
+        HudiAnomalyDetection_default
+      </td>
+      <td>
+        8
+      </td>
+      <td sorttable_customkey="8192">
+        8.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 14:27:49</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>9 s</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126135918-3349">app-20211126135918-3349</a>
+        
+      </td>
+      <td>
+        TEST
+      </td>
+      <td>
+        8
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 13:59:18</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>13 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126134957-3348">app-20211126134957-3348</a>
+        
+      </td>
+      <td>
+        Spark shell
+      </td>
+      <td>
+        16
+      </td>
+      <td sorttable_customkey="32768">
+        32.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 13:49:57</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>6.4 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126124744-3347">app-20211126124744-3347</a>
+        
+      </td>
+      <td>
+        delta-streamer-ods_etc_project_etccardbusiness
+      </td>
+      <td>
+        4
+      </td>
+      <td sorttable_customkey="12288">
+        12.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 12:47:44</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>54 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126122215-3346">app-20211126122215-3346</a>
+        
+      </td>
+      <td>
+        delta-streamer-ods_etc_project_etcobubusiness
+      </td>
+      <td>
+        4
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 12:22:15</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>20 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126114531-3344">app-20211126114531-3344</a>
+        
+      </td>
+      <td>
+        delta-streamer-ods_etc_project_etcobubusiness
+      </td>
+      <td>
+        4
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 11:45:31</td>
+      <td>zhongtai</td>
+      <td>KILLED</td>
+      <td>34 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126114553-3345">app-20211126114553-3345</a>
+        
+      </td>
+      <td>
+        delta-streamer-ods_etc_project_etccardbusiness
+      </td>
+      <td>
+        4
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 11:45:53</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>1 s</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126111956-3341">app-20211126111956-3341</a>
+        
+      </td>
+      <td>
+        Spark shell
+      </td>
+      <td>
+        16
+      </td>
+      <td sorttable_customkey="32768">
+        32.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 11:19:56</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>19 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126113651-3343">app-20211126113651-3343</a>
+        
+      </td>
+      <td>
+        delta-streamer-ods_etc_project_etcobubusiness
+      </td>
+      <td>
+        4
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 11:36:51</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>2 s</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126113409-3342">app-20211126113409-3342</a>
+        
+      </td>
+      <td>
+        delta-streamer-ods_etc_project_etcobubusiness
+      </td>
+      <td>
+        4
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 11:34:09</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>2 s</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126102658-3340">app-20211126102658-3340</a>
+        
+      </td>
+      <td>
+        pyspark-wj
+      </td>
+      <td>
+        15
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 10:26:58</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>27 s</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126093343-3339">app-20211126093343-3339</a>
+        
+      </td>
+      <td>
+        TEST
+      </td>
+      <td>
+        8
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 09:33:43</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>9.4 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126004346-3309">app-20211126004346-3309</a>
+        
+      </td>
+      <td>
+        spark-hudi-sync-etcvehicle
+      </td>
+      <td>
+        24
+      </td>
+      <td sorttable_customkey="10240">
+        10.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 00:43:46</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>7.6 h</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126005307-3310">app-20211126005307-3310</a>
+        
+      </td>
+      <td>
+        spark-hudi-sync-etccardinfo
+      </td>
+      <td>
+        15
+      </td>
+      <td sorttable_customkey="10240">
+        10.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 00:53:07</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>5.4 h</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126050011-3338">app-20211126050011-3338</a>
+        
+      </td>
+      <td>
+        Spark shell
+      </td>
+      <td>
+        32
+      </td>
+      <td sorttable_customkey="65536">
+        64.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 05:00:11</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>18 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126010026-3311">app-20211126010026-3311</a>
+        
+      </td>
+      <td>
+        spark-hudi-sync-etcclientinfo
+      </td>
+      <td>
+        15
+      </td>
+      <td sorttable_customkey="10240">
+        10.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 01:00:26</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>2.3 h</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126030844-3336">app-20211126030844-3336</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dws/dws_black_dur_ratio_fu
+      </td>
+      <td>
+        6
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 03:08:44</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>1.4 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126030844-3337">app-20211126030844-3337</a>
+        
+      </td>
+      <td>
+        pyspark-test
+      </td>
+      <td>
+        4
+      </td>
+      <td sorttable_customkey="1024">
+        1024.0 MiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 03:08:44</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>1.3 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126030727-3335">app-20211126030727-3335</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dws/dws_score_card_b_res
+      </td>
+      <td>
+        6
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 03:07:27</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>1.2 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126030411-3334">app-20211126030411-3334</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dws/dws_black_dur_ratio_pas_card
+      </td>
+      <td>
+        6
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 03:04:11</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>3.2 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126030159-3333">app-20211126030159-3333</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dwm/dwm_blacklist_table_timesheet
+      </td>
+      <td>
+        9
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 03:01:59</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>2.1 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126030159-3332">app-20211126030159-3332</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dws/dws_blacklist_card_cnt
+      </td>
+      <td>
+        6
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 03:01:59</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>1.9 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126025002-3331">app-20211126025002-3331</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dwm/dwm_etcp_blacklistloghis_history_day
+      </td>
+      <td>
+        12
+      </td>
+      <td sorttable_customkey="5120">
+        5.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 02:50:02</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>12 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126010037-3312">app-20211126010037-3312</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dwd/dwd_etcp_blacklistloghis_incr_day
+      </td>
+      <td>
+        30
+      </td>
+      <td sorttable_customkey="25600">
+        25.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 01:00:37</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>1.8 h</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126023522-3330">app-20211126023522-3330</a>
+        
+      </td>
+      <td>
+        pluginApp
+      </td>
+      <td>
+        8
+      </td>
+      <td sorttable_customkey="8192">
+        8.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 02:35:22</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>10 s</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126021447-3329">app-20211126021447-3329</a>
+        
+      </td>
+      <td>
+        pyspark-test
+      </td>
+      <td>
+        4
+      </td>
+      <td sorttable_customkey="1024">
+        1024.0 MiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 02:14:47</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>1.5 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126020124-3328">app-20211126020124-3328</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dws/dws_score_card_a_res
+      </td>
+      <td>
+        6
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 02:01:24</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>13 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126015233-3326">app-20211126015233-3326</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dws/dws_bank_cusum_cnt
+      </td>
+      <td>
+        6
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 01:52:33</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>22 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126015707-3327">app-20211126015707-3327</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dws/dws_express_cnt
+      </td>
+      <td>
+        12
+      </td>
+      <td sorttable_customkey="5120">
+        5.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 01:57:07</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>5.0 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126013236-3322">app-20211126013236-3322</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dws/dws_client_vehicle_agg
+      </td>
+      <td>
+        18
+      </td>
+      <td sorttable_customkey="10240">
+        10.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 01:32:36</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>29 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126013240-3324">app-20211126013240-3324</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dwm/dwm_daci_tb_consumer_expressway_history_day
+      </td>
+      <td>
+        18
+      </td>
+      <td sorttable_customkey="15360">
+        15.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 01:32:40</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>24 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126013238-3323">app-20211126013238-3323</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dwm/dwm_disc_tb_bank_debit_bill_history_day
+      </td>
+      <td>
+        18
+      </td>
+      <td sorttable_customkey="10240">
+        10.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 01:32:38</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>20 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126013241-3325">app-20211126013241-3325</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dws/dws_client_basicinfo
+      </td>
+      <td>
+        18
+      </td>
+      <td sorttable_customkey="10240">
+        10.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 01:32:41</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>4.6 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126013234-3321">app-20211126013234-3321</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dws/dws_client_card_agg
+      </td>
+      <td>
+        12
+      </td>
+      <td sorttable_customkey="8192">
+        8.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 01:32:34</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>3.9 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126013234-3320">app-20211126013234-3320</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dws/dws_client_card_vehicle
+      </td>
+      <td>
+        18
+      </td>
+      <td sorttable_customkey="10240">
+        10.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 01:32:34</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>3.6 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126012611-3319">app-20211126012611-3319</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dwm/dwm_valid_sample
+      </td>
+      <td>
+        9
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 01:26:11</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>6.2 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126010042-3314">app-20211126010042-3314</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dwd/dwd_etcp_etcvehicle_history_day
+      </td>
+      <td>
+        8
+      </td>
+      <td sorttable_customkey="8192">
+        8.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 01:00:42</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>25 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126010054-3317">app-20211126010054-3317</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dwd/dwd_etcp_etccardinfo_history_day
+      </td>
+      <td>
+        8
+      </td>
+      <td sorttable_customkey="8192">
+        8.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 01:00:54</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>23 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126010040-3313">app-20211126010040-3313</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dwd/dwd_etcp_etcclientinfo_history_day
+      </td>
+      <td>
+        8
+      </td>
+      <td sorttable_customkey="8192">
+        8.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 01:00:40</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>21 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126010046-3315">app-20211126010046-3315</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dwd/dwd_daci_tb_consumer_expressway_incr_day
+      </td>
+      <td>
+        6
+      </td>
+      <td sorttable_customkey="8192">
+        8.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 01:00:46</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>6.5 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126010049-3316">app-20211126010049-3316</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dwd/dwd_disc_tb_bank_debit_bill_incr_day
+      </td>
+      <td>
+        20
+      </td>
+      <td sorttable_customkey="8192">
+        8.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 01:00:49</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>6.0 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126004045-3308">app-20211126004045-3308</a>
+        
+      </td>
+      <td>
+        spark-hudi-sync-tb_bank_debit_bill
+      </td>
+      <td>
+        16
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 00:40:45</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>1.0 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126001035-3307">app-20211126001035-3307</a>
+        
+      </td>
+      <td>
+        spark-hudi-sync-blacklistloghis
+      </td>
+      <td>
+        16
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 00:10:35</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>1.1 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211126000046-3306">app-20211126000046-3306</a>
+        
+      </td>
+      <td>
+        spark-hudi-sync-tb_consumer_expressway
+      </td>
+      <td>
+        16
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/26 00:00:46</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>1.2 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211125184610-3304">app-20211125184610-3304</a>
+        
+      </td>
+      <td>
+        TEST
+      </td>
+      <td>
+        8
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/25 18:46:10</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>5.8 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211125184957-3305">app-20211125184957-3305</a>
+        
+      </td>
+      <td>
+        delta-streamer-ods_etc_project_activity_manage
+      </td>
+      <td>
+        4
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/25 18:49:57</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>26 s</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211125183254-3303">app-20211125183254-3303</a>
+        
+      </td>
+      <td>
+        delta-streamer-ods_etc_project_activity_manage
+      </td>
+      <td>
+        4
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/25 18:32:54</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>34 s</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211125182627-3302">app-20211125182627-3302</a>
+        
+      </td>
+      <td>
+        delta-streamer-ods_etc_project_activity_manage
+      </td>
+      <td>
+        4
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/25 18:26:27</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>34 s</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211125171011-3300">app-20211125171011-3300</a>
+        
+      </td>
+      <td>
+        express_gbupload_etctu
+      </td>
+      <td>
+        8
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/25 17:10:11</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>21 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211125171011-3301">app-20211125171011-3301</a>
+        
+      </td>
+      <td>
+        express_gbupload_viu
+      </td>
+      <td>
+        8
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/25 17:10:11</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>8.3 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211125170011-3299">app-20211125170011-3299</a>
+        
+      </td>
+      <td>
+        express_trc_exetcpu
+      </td>
+      <td>
+        8
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/25 17:00:11</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>1.0 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211125170011-3297">app-20211125170011-3297</a>
+        
+      </td>
+      <td>
+        express_trc_viu
+      </td>
+      <td>
+        8
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/25 17:00:11</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>52 s</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211125170011-3296">app-20211125170011-3296</a>
+        
+      </td>
+      <td>
+        express_trc_enpu
+      </td>
+      <td>
+        8
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/25 17:00:11</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>46 s</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211125170011-3298">app-20211125170011-3298</a>
+        
+      </td>
+      <td>
+        express_trc_otu
+      </td>
+      <td>
+        8
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/25 17:00:11</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>40 s</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211125144037-3295">app-20211125144037-3295</a>
+        
+      </td>
+      <td>
+        TEST
+      </td>
+      <td>
+        8
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/25 14:40:37</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>7.8 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211125004315-3266">app-20211125004315-3266</a>
+        
+      </td>
+      <td>
+        spark-hudi-sync-etcvehicle
+      </td>
+      <td>
+        16
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/25 00:43:15</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>7.8 h</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211125050011-3294">app-20211125050011-3294</a>
+        
+      </td>
+      <td>
+        Spark shell
+      </td>
+      <td>
+        32
+      </td>
+      <td sorttable_customkey="65536">
+        64.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/25 05:00:11</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>59 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211125005337-3267">app-20211125005337-3267</a>
+        
+      </td>
+      <td>
+        spark-hudi-sync-etccardinfo
+      </td>
+      <td>
+        16
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/25 00:53:37</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>4.4 h</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211125032102-3292">app-20211125032102-3292</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dws/dws_black_dur_ratio_fu
+      </td>
+      <td>
+        6
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/25 03:21:02</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>1.9 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211125032103-3293">app-20211125032103-3293</a>
+        
+      </td>
+      <td>
+        pyspark-test
+      </td>
+      <td>
+        4
+      </td>
+      <td sorttable_customkey="1024">
+        1024.0 MiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/25 03:21:03</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>1.1 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211125031847-3291">app-20211125031847-3291</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dws/dws_score_card_b_res
+      </td>
+      <td>
+        6
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/25 03:18:47</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>2.1 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211125031609-3290">app-20211125031609-3290</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dws/dws_black_dur_ratio_pas_card
+      </td>
+      <td>
+        6
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/25 03:16:09</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>2.5 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211125031134-3289">app-20211125031134-3289</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dwm/dwm_blacklist_table_timesheet
+      </td>
+      <td>
+        9
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/25 03:11:34</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>4.5 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211125031134-3288">app-20211125031134-3288</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dws/dws_blacklist_card_cnt
+      </td>
+      <td>
+        6
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/25 03:11:34</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>1.4 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211125030018-3287">app-20211125030018-3287</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dwm/dwm_etcp_blacklistloghis_history_day
+      </td>
+      <td>
+        12
+      </td>
+      <td sorttable_customkey="5120">
+        5.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/25 03:00:18</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>11 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211125010046-3274">app-20211125010046-3274</a>
+        
+      </td>
+      <td>
+        spark-hudi-sync-etcclientinfo
+      </td>
+      <td>
+        16
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/25 01:00:46</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>2.1 h</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211125010041-3272">app-20211125010041-3272</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dwd/dwd_etcp_blacklistloghis_incr_day
+      </td>
+      <td>
+        30
+      </td>
+      <td sorttable_customkey="25600">
+        25.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/25 01:00:41</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>2.0 h</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211125023518-3286">app-20211125023518-3286</a>
+        
+      </td>
+      <td>
+        pluginApp
+      </td>
+      <td>
+        8
+      </td>
+      <td sorttable_customkey="8192">
+        8.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/25 02:35:18</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>7 s</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211125020218-3285">app-20211125020218-3285</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dws/dws_express_cnt
+      </td>
+      <td>
+        12
+      </td>
+      <td sorttable_customkey="5120">
+        5.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/25 02:02:18</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>14 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211125013308-3277">app-20211125013308-3277</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dwm/dwm_daci_tb_consumer_expressway_history_day
+      </td>
+      <td>
+        18
+      </td>
+      <td sorttable_customkey="15360">
+        15.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/25 01:33:08</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>29 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211125015042-3284">app-20211125015042-3284</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dws/dws_bank_cusum_cnt
+      </td>
+      <td>
+        6
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/25 01:50:42</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>10 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211125014913-3283">app-20211125014913-3283</a>
+        
+      </td>
+      <td>
+        pyspark-test
+      </td>
+      <td>
+        4
+      </td>
+      <td sorttable_customkey="1024">
+        1024.0 MiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/25 01:49:13</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>1.6 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211125013308-3276">app-20211125013308-3276</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dwm/dwm_disc_tb_bank_debit_bill_history_day
+      </td>
+      <td>
+        18
+      </td>
+      <td sorttable_customkey="10240">
+        10.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/25 01:33:08</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>17 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211125014122-3282">app-20211125014122-3282</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dws/dws_score_card_a_res
+      </td>
+      <td>
+        6
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/25 01:41:22</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>7.7 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211125013308-3278">app-20211125013308-3278</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dws/dws_client_card_agg
+      </td>
+      <td>
+        12
+      </td>
+      <td sorttable_customkey="8192">
+        8.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/25 01:33:08</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>8.1 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211125013308-3279">app-20211125013308-3279</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dws/dws_client_vehicle_agg
+      </td>
+      <td>
+        18
+      </td>
+      <td sorttable_customkey="10240">
+        10.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/25 01:33:08</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>8.0 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211125013309-3281">app-20211125013309-3281</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dws/dws_client_card_vehicle
+      </td>
+      <td>
+        18
+      </td>
+      <td sorttable_customkey="10240">
+        10.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/25 01:33:09</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>6.4 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211125013308-3280">app-20211125013308-3280</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dws/dws_client_basicinfo
+      </td>
+      <td>
+        18
+      </td>
+      <td sorttable_customkey="10240">
+        10.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/25 01:33:08</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>3.1 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211125012854-3275">app-20211125012854-3275</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dwm/dwm_valid_sample
+      </td>
+      <td>
+        9
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/25 01:28:54</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>4.1 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211125010041-3269">app-20211125010041-3269</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dwd/dwd_etcp_etccardinfo_history_day
+      </td>
+      <td>
+        8
+      </td>
+      <td sorttable_customkey="8192">
+        8.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/25 01:00:41</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>28 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211125010041-3271">app-20211125010041-3271</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dwd/dwd_etcp_etcvehicle_history_day
+      </td>
+      <td>
+        8
+      </td>
+      <td sorttable_customkey="8192">
+        8.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/25 01:00:41</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>27 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211125010041-3270">app-20211125010041-3270</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dwd/dwd_etcp_etcclientinfo_history_day
+      </td>
+      <td>
+        8
+      </td>
+      <td sorttable_customkey="8192">
+        8.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/25 01:00:41</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>21 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211125010041-3273">app-20211125010041-3273</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dwd/dwd_daci_tb_consumer_expressway_incr_day
+      </td>
+      <td>
+        6
+      </td>
+      <td sorttable_customkey="8192">
+        8.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/25 01:00:41</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>11 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211125010037-3268">app-20211125010037-3268</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dwd/dwd_disc_tb_bank_debit_bill_incr_day
+      </td>
+      <td>
+        20
+      </td>
+      <td sorttable_customkey="8192">
+        8.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/25 01:00:37</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>11 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211125004115-3265">app-20211125004115-3265</a>
+        
+      </td>
+      <td>
+        spark-hudi-sync-tb_bank_debit_bill
+      </td>
+      <td>
+        16
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/25 00:41:15</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>1.1 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211125001035-3264">app-20211125001035-3264</a>
+        
+      </td>
+      <td>
+        spark-hudi-sync-blacklistloghis
+      </td>
+      <td>
+        16
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/25 00:10:35</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>1.1 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211125000045-3263">app-20211125000045-3263</a>
+        
+      </td>
+      <td>
+        spark-hudi-sync-tb_consumer_expressway
+      </td>
+      <td>
+        16
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/25 00:00:45</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>1.3 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211124171010-3262">app-20211124171010-3262</a>
+        
+      </td>
+      <td>
+        express_gbupload_etctu
+      </td>
+      <td>
+        8
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/24 17:10:10</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>21 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211124171010-3261">app-20211124171010-3261</a>
+        
+      </td>
+      <td>
+        express_gbupload_viu
+      </td>
+      <td>
+        8
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/24 17:10:10</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>8.1 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211124170010-3257">app-20211124170010-3257</a>
+        
+      </td>
+      <td>
+        express_trc_exetcpu
+      </td>
+      <td>
+        8
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/24 17:00:10</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>57 s</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211124170011-3259">app-20211124170011-3259</a>
+        
+      </td>
+      <td>
+        express_trc_viu
+      </td>
+      <td>
+        8
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/24 17:00:11</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>52 s</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211124170011-3260">app-20211124170011-3260</a>
+        
+      </td>
+      <td>
+        express_trc_enpu
+      </td>
+      <td>
+        8
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/24 17:00:11</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>50 s</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211124170011-3258">app-20211124170011-3258</a>
+        
+      </td>
+      <td>
+        express_trc_otu
+      </td>
+      <td>
+        8
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/24 17:00:11</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>41 s</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211124151722-3256">app-20211124151722-3256</a>
+        
+      </td>
+      <td>
+        TEST
+      </td>
+      <td>
+        8
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/24 15:17:22</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>38 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211122092955-3171">app-20211122092955-3171</a>
+        
+      </td>
+      <td>
+        pyspark-hjzx
+      </td>
+      <td>
+        4
+      </td>
+      <td sorttable_customkey="1024">
+        1024.0 MiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/22 09:29:55</td>
+      <td>zhongtai</td>
+      <td>KILLED</td>
+      <td>47.5 h</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211124004346-3227">app-20211124004346-3227</a>
+        
+      </td>
+      <td>
+        spark-hudi-sync-etcvehicle
+      </td>
+      <td>
+        16
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/24 00:43:46</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>8.2 h</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211124050011-3255">app-20211124050011-3255</a>
+        
+      </td>
+      <td>
+        Spark shell
+      </td>
+      <td>
+        32
+      </td>
+      <td sorttable_customkey="65536">
+        64.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/24 05:00:11</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>17 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211124005356-3228">app-20211124005356-3228</a>
+        
+      </td>
+      <td>
+        spark-hudi-sync-etccardinfo
+      </td>
+      <td>
+        16
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/24 00:53:56</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>4.3 h</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211124010218-3235">app-20211124010218-3235</a>
+        
+      </td>
+      <td>
+        spark-hudi-sync-etcclientinfo
+      </td>
+      <td>
+        16
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/24 01:02:18</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>2.9 h</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211124030111-3253">app-20211124030111-3253</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dws/dws_black_dur_ratio_fu
+      </td>
+      <td>
+        6
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/24 03:01:11</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>6.4 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211124030111-3254">app-20211124030111-3254</a>
+        
+      </td>
+      <td>
+        pyspark-test
+      </td>
+      <td>
+        4
+      </td>
+      <td sorttable_customkey="1024">
+        1024.0 MiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/24 03:01:11</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>1.2 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211124025942-3252">app-20211124025942-3252</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dws/dws_score_card_b_res
+      </td>
+      <td>
+        6
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/24 02:59:42</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>1.4 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211124025644-3251">app-20211124025644-3251</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dws/dws_black_dur_ratio_pas_card
+      </td>
+      <td>
+        6
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/24 02:56:44</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>2.9 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211124025138-3250">app-20211124025138-3250</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dwm/dwm_blacklist_table_timesheet
+      </td>
+      <td>
+        9
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/24 02:51:38</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>5.0 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211124025138-3249">app-20211124025138-3249</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dws/dws_blacklist_card_cnt
+      </td>
+      <td>
+        6
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/24 02:51:38</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>3.5 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211124024326-3248">app-20211124024326-3248</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dwm/dwm_etcp_blacklistloghis_history_day
+      </td>
+      <td>
+        12
+      </td>
+      <td sorttable_customkey="5120">
+        5.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/24 02:43:26</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>8.1 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211124010041-3230">app-20211124010041-3230</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dwd/dwd_etcp_blacklistloghis_incr_day
+      </td>
+      <td>
+        30
+      </td>
+      <td sorttable_customkey="25600">
+        25.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/24 01:00:41</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>1.7 h</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211124023513-3247">app-20211124023513-3247</a>
+        
+      </td>
+      <td>
+        pluginApp
+      </td>
+      <td>
+        8
+      </td>
+      <td sorttable_customkey="8192">
+        8.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/24 02:35:13</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>13 s</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211124015856-3245">app-20211124015856-3245</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dws/dws_bank_cusum_cnt
+      </td>
+      <td>
+        6
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/24 01:58:56</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>6.9 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211124020040-3246">app-20211124020040-3246</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dws/dws_express_cnt
+      </td>
+      <td>
+        12
+      </td>
+      <td sorttable_customkey="5120">
+        5.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/24 02:00:40</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>2.4 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211124013005-3240">app-20211124013005-3240</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dwm/dwm_daci_tb_consumer_expressway_history_day
+      </td>
+      <td>
+        18
+      </td>
+      <td sorttable_customkey="15360">
+        15.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/24 01:30:05</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>31 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211124013004-3239">app-20211124013004-3239</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dwm/dwm_disc_tb_bank_debit_bill_history_day
+      </td>
+      <td>
+        18
+      </td>
+      <td sorttable_customkey="10240">
+        10.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/24 01:30:04</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>29 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211124015026-3244">app-20211124015026-3244</a>
+        
+      </td>
+      <td>
+        pyspark-test
+      </td>
+      <td>
+        4
+      </td>
+      <td sorttable_customkey="1024">
+        1024.0 MiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/24 01:50:26</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>1.3 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211124014329-3243">app-20211124014329-3243</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dws/dws_score_card_a_res
+      </td>
+      <td>
+        6
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/24 01:43:29</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>6.8 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211124013005-3241">app-20211124013005-3241</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dws/dws_client_vehicle_agg
+      </td>
+      <td>
+        18
+      </td>
+      <td sorttable_customkey="10240">
+        10.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/24 01:30:05</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>13 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211124013002-3238">app-20211124013002-3238</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dws/dws_client_card_agg
+      </td>
+      <td>
+        12
+      </td>
+      <td sorttable_customkey="8192">
+        8.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/24 01:30:02</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>9.6 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211124013005-3242">app-20211124013005-3242</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dws/dws_client_basicinfo
+      </td>
+      <td>
+        6
+      </td>
+      <td sorttable_customkey="10240">
+        10.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/24 01:30:05</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>8.4 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211124013000-3237">app-20211124013000-3237</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dws/dws_client_card_vehicle
+      </td>
+      <td>
+        18
+      </td>
+      <td sorttable_customkey="10240">
+        10.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/24 01:30:00</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>3.6 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211124012510-3236">app-20211124012510-3236</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dwm/dwm_valid_sample
+      </td>
+      <td>
+        9
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/24 01:25:10</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>4.7 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211124010042-3233">app-20211124010042-3233</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dwd/dwd_etcp_etcvehicle_history_day
+      </td>
+      <td>
+        8
+      </td>
+      <td sorttable_customkey="8192">
+        8.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/24 01:00:42</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>24 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211124010042-3232">app-20211124010042-3232</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dwd/dwd_daci_tb_consumer_expressway_incr_day
+      </td>
+      <td>
+        6
+      </td>
+      <td sorttable_customkey="8192">
+        8.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/24 01:00:42</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>23 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211124010037-3229">app-20211124010037-3229</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dwd/dwd_etcp_etcclientinfo_history_day
+      </td>
+      <td>
+        8
+      </td>
+      <td sorttable_customkey="8192">
+        8.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/24 01:00:37</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>23 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211124010042-3231">app-20211124010042-3231</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dwd/dwd_etcp_etccardinfo_history_day
+      </td>
+      <td>
+        8
+      </td>
+      <td sorttable_customkey="8192">
+        8.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/24 01:00:42</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>22 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211124010042-3234">app-20211124010042-3234</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dwd/dwd_disc_tb_bank_debit_bill_incr_day
+      </td>
+      <td>
+        20
+      </td>
+      <td sorttable_customkey="8192">
+        8.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/24 01:00:42</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>4.7 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211124004007-3226">app-20211124004007-3226</a>
+        
+      </td>
+      <td>
+        spark-hudi-sync-tb_bank_debit_bill
+      </td>
+      <td>
+        16
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/24 00:40:07</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>1.1 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211124001035-3225">app-20211124001035-3225</a>
+        
+      </td>
+      <td>
+        spark-hudi-sync-blacklistloghis
+      </td>
+      <td>
+        16
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/24 00:10:35</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>1.2 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211124000055-3224">app-20211124000055-3224</a>
+        
+      </td>
+      <td>
+        spark-hudi-sync-tb_consumer_expressway
+      </td>
+      <td>
+        16
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/24 00:00:55</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>1.3 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211123171010-3222">app-20211123171010-3222</a>
+        
+      </td>
+      <td>
+        express_gbupload_etctu
+      </td>
+      <td>
+        8
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/23 17:10:10</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>33 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211123171010-3223">app-20211123171010-3223</a>
+        
+      </td>
+      <td>
+        express_gbupload_viu
+      </td>
+      <td>
+        8
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/23 17:10:10</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>8.9 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211123170011-3220">app-20211123170011-3220</a>
+        
+      </td>
+      <td>
+        express_trc_exetcpu
+      </td>
+      <td>
+        8
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/23 17:00:11</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>1.0 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211123170011-3221">app-20211123170011-3221</a>
+        
+      </td>
+      <td>
+        express_trc_viu
+      </td>
+      <td>
+        8
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/23 17:00:11</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>50 s</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211123170011-3219">app-20211123170011-3219</a>
+        
+      </td>
+      <td>
+        express_trc_enpu
+      </td>
+      <td>
+        8
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/23 17:00:11</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>48 s</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211123170010-3218">app-20211123170010-3218</a>
+        
+      </td>
+      <td>
+        express_trc_otu
+      </td>
+      <td>
+        8
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/23 17:00:10</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>43 s</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211123153040-3217">app-20211123153040-3217</a>
+        
+      </td>
+      <td>
+        Spark shell
+      </td>
+      <td>
+        16
+      </td>
+      <td sorttable_customkey="32768">
+        32.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/23 15:30:40</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>10 s</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211123152328-3216">app-20211123152328-3216</a>
+        
+      </td>
+      <td>
+        Spark shell
+      </td>
+      <td>
+        16
+      </td>
+      <td sorttable_customkey="32768">
+        32.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/23 15:23:28</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>5.5 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211123150310-3215">app-20211123150310-3215</a>
+        
+      </td>
+      <td>
+        Spark shell
+      </td>
+      <td>
+        16
+      </td>
+      <td sorttable_customkey="32768">
+        32.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/23 15:03:10</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>11 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211123142801-3214">app-20211123142801-3214</a>
+        
+      </td>
+      <td>
+        Spark shell
+      </td>
+      <td>
+        8
+      </td>
+      <td sorttable_customkey="16384">
+        16.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/23 14:28:01</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>27 s</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211123004335-3185">app-20211123004335-3185</a>
+        
+      </td>
+      <td>
+        spark-hudi-sync-etcvehicle
+      </td>
+      <td>
+        16
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/23 00:43:35</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>8.0 h</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211123005332-3186">app-20211123005332-3186</a>
+        
+      </td>
+      <td>
+        spark-hudi-sync-etccardinfo
+      </td>
+      <td>
+        16
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/23 00:53:32</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>6.2 h</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211123050010-3213">app-20211123050010-3213</a>
+        
+      </td>
+      <td>
+        Spark shell
+      </td>
+      <td>
+        32
+      </td>
+      <td sorttable_customkey="65536">
+        64.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/23 05:00:10</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>22 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211123025743-3211">app-20211123025743-3211</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dws/dws_black_dur_ratio_fu
+      </td>
+      <td>
+        6
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/23 02:57:43</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>1.8 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211123025743-3212">app-20211123025743-3212</a>
+        
+      </td>
+      <td>
+        pyspark-test
+      </td>
+      <td>
+        4
+      </td>
+      <td sorttable_customkey="1024">
+        1024.0 MiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/23 02:57:43</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>1.3 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211123025624-3210">app-20211123025624-3210</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dws/dws_score_card_b_res
+      </td>
+      <td>
+        6
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/23 02:56:24</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>1.2 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211123025533-3209">app-20211123025533-3209</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dws/dws_black_dur_ratio_pas_card
+      </td>
+      <td>
+        6
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/23 02:55:33</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>46 s</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211123025355-3208">app-20211123025355-3208</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dws/dws_blacklist_card_cnt
+      </td>
+      <td>
+        6
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/23 02:53:55</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>1.7 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211123025355-3207">app-20211123025355-3207</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dwm/dwm_blacklist_table_timesheet
+      </td>
+      <td>
+        9
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/23 02:53:55</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>1.6 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211123024724-3206">app-20211123024724-3206</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dwm/dwm_etcp_blacklistloghis_history_day
+      </td>
+      <td>
+        12
+      </td>
+      <td sorttable_customkey="5120">
+        5.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/23 02:47:24</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>6.4 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211123010037-3190">app-20211123010037-3190</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dwd/dwd_etcp_blacklistloghis_incr_day
+      </td>
+      <td>
+        30
+      </td>
+      <td sorttable_customkey="25600">
+        25.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/23 01:00:37</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>1.8 h</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211123023529-3205">app-20211123023529-3205</a>
+        
+      </td>
+      <td>
+        pluginApp
+      </td>
+      <td>
+        8
+      </td>
+      <td sorttable_customkey="8192">
+        8.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/23 02:35:29</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>5 s</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211123010109-3193">app-20211123010109-3193</a>
+        
+      </td>
+      <td>
+        spark-hudi-sync-etcclientinfo
+      </td>
+      <td>
+        16
+      </td>
+      <td sorttable_customkey="4096">
+        4.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/23 01:01:09</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>1.6 h</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211123021007-3204">app-20211123021007-3204</a>
+        
+      </td>
+      <td>
+        pyspark-test
+      </td>
+      <td>
+        4
+      </td>
+      <td sorttable_customkey="1024">
+        1024.0 MiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/23 02:10:07</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>49 s</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211123020414-3203">app-20211123020414-3203</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dws/dws_score_card_a_res
+      </td>
+      <td>
+        6
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/23 02:04:14</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>5.8 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211123015347-3201">app-20211123015347-3201</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dws/dws_express_cnt
+      </td>
+      <td>
+        12
+      </td>
+      <td sorttable_customkey="5120">
+        5.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/23 01:53:47</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>16 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211123020346-3202">app-20211123020346-3202</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dws/dws_bank_cusum_cnt
+      </td>
+      <td>
+        6
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/23 02:03:46</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>3.4 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211123013338-3199">app-20211123013338-3199</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dws/dws_client_vehicle_agg
+      </td>
+      <td>
+        18
+      </td>
+      <td sorttable_customkey="10240">
+        10.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/23 01:33:38</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>31 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211123013336-3197">app-20211123013336-3197</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dwm/dwm_disc_tb_bank_debit_bill_history_day
+      </td>
+      <td>
+        18
+      </td>
+      <td sorttable_customkey="10240">
+        10.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/23 01:33:36</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>30 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211123013333-3195">app-20211123013333-3195</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dwm/dwm_daci_tb_consumer_expressway_history_day
+      </td>
+      <td>
+        18
+      </td>
+      <td sorttable_customkey="15360">
+        15.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/23 01:33:33</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>20 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211123013338-3198">app-20211123013338-3198</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dws/dws_client_basicinfo
+      </td>
+      <td>
+        18
+      </td>
+      <td sorttable_customkey="10240">
+        10.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/23 01:33:38</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>14 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211123013338-3200">app-20211123013338-3200</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dws/dws_client_card_agg
+      </td>
+      <td>
+        8
+      </td>
+      <td sorttable_customkey="8192">
+        8.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/23 01:33:38</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>11 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211123013334-3196">app-20211123013334-3196</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dws/dws_client_card_vehicle
+      </td>
+      <td>
+        18
+      </td>
+      <td sorttable_customkey="10240">
+        10.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/23 01:33:34</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>1.7 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211123012709-3194">app-20211123012709-3194</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dwm/dwm_valid_sample
+      </td>
+      <td>
+        9
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/23 01:27:09</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>6.3 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211123010037-3187">app-20211123010037-3187</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dwd/dwd_etcp_etcvehicle_history_day
+      </td>
+      <td>
+        8
+      </td>
+      <td sorttable_customkey="8192">
+        8.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/23 01:00:37</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>26 min</td>
+    </tr><tr>
+      <td>
+        <a href="app?appId=app-20211123010037-3192">app-20211123010037-3192</a>
+        
+      </td>
+      <td>
+        run  /tmp/jobs/dwd/dwd_daci_tb_consumer_expressway_incr_day
+      </td>
+      <td>
+        6
+      </td>
+      <td sorttable_customkey="8192">
+        8.0 GiB
+      </td>
+      <td>
+        
+      </td>
+      <td>2021/11/23 01:00:37</td>
+      <td>zhongtai</td>
+      <td>FINISHED</td>
+      <td>26 min</td>
+    </tr>
+      </tbody>
+    </table>
+            </div>
+          </div>
+        </div><div>
+          <div class="row">
+                <div class="col-12">
+                  <span class="collapse-aggregated-completedDrivers collapse-table" onClick="collapseTable('collapse-aggregated-completedDrivers',
+                      'aggregated-completedDrivers')">
+                    <h4>
+                      <span class="collapse-table-arrow arrow-open"></span>
+                      <a>Completed Drivers (185)</a>
+                    </h4>
+                  </span>
+                  <div class="aggregated-completedDrivers collapsible-table">
+                    <table class="table table-bordered table-sm table-striped sortable">
+      <thead><th width="" class="">Submission ID</th><th width="" class="">Submitted Time</th><th width="" class="">Worker</th><th width="" class="">State</th><th width="" class="">Cores</th><th width="" class="">Memory</th><th width="" class="">Resources</th><th width="" class="">Main Class</th></thead>
+      <tbody>
+        <tr>
+      <td>driver-20211126151002-0363 </td>
+      <td>2021/11/26 15:10:02</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>FAILED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211126143013-0362 </td>
+      <td>2021/11/26 14:30:13</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211126142741-0361 </td>
+      <td>2021/11/26 14:27:41</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211126023502-0360 </td>
+      <td>2021/11/26 02:35:02</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>FAILED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211125023501-0359 </td>
+      <td>2021/11/25 02:35:01</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FAILED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211124023501-0358 </td>
+      <td>2021/11/24 02:35:01</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FAILED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211123023501-0357 </td>
+      <td>2021/11/23 02:35:01</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>FAILED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211122023500-0356 </td>
+      <td>2021/11/22 02:35:00</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FAILED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211121023500-0355 </td>
+      <td>2021/11/21 02:35:00</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>FAILED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211120023500-0354 </td>
+      <td>2021/11/20 02:35:00</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FAILED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211119023459-0353 </td>
+      <td>2021/11/19 02:34:59</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>FAILED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211118151654-0352 </td>
+      <td>2021/11/18 15:16:54</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCheckCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211118102930-0351 </td>
+      <td>2021/11/18 10:29:30</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211118102645-0350 </td>
+      <td>2021/11/18 10:26:45</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211118102507-0349 </td>
+      <td>2021/11/18 10:25:07</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211118102324-0348 </td>
+      <td>2021/11/18 10:23:24</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211118093159-0347 </td>
+      <td>2021/11/18 09:31:59</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211118092757-0346 </td>
+      <td>2021/11/18 09:27:57</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211118092729-0345 </td>
+      <td>2021/11/18 09:27:29</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211118092643-0344 </td>
+      <td>2021/11/18 09:26:43</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211118092227-0343 </td>
+      <td>2021/11/18 09:22:27</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211118091622-0342 </td>
+      <td>2021/11/18 09:16:22</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211118091529-0341 </td>
+      <td>2021/11/18 09:15:29</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211118091450-0340 </td>
+      <td>2021/11/18 09:14:50</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211118090016-0339 </td>
+      <td>2021/11/18 09:00:16</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211118023459-0338 </td>
+      <td>2021/11/18 02:34:59</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>FAILED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211117174525-0337 </td>
+      <td>2021/11/17 17:45:25</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211117174417-0336 </td>
+      <td>2021/11/17 17:44:17</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211117173949-0335 </td>
+      <td>2021/11/17 17:39:49</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211117170407-0334 </td>
+      <td>2021/11/17 17:04:07</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211117165640-0333 </td>
+      <td>2021/11/17 16:56:40</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211117093124-0332 </td>
+      <td>2021/11/17 09:31:24</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211117092819-0331 </td>
+      <td>2021/11/17 09:28:19</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>scala.com.jshcbd.EntityBuild</td>
+      
+    </tr><tr>
+      <td>driver-20211117092556-0330 </td>
+      <td>2021/11/17 09:25:56</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211117023458-0329 </td>
+      <td>2021/11/17 02:34:58</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FAILED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211116105048-0328 </td>
+      <td>2021/11/16 10:50:48</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211116104525-0327 </td>
+      <td>2021/11/16 10:45:25</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211116103055-0326 </td>
+      <td>2021/11/16 10:30:55</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211116102816-0325 </td>
+      <td>2021/11/16 10:28:16</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211116101521-0324 </td>
+      <td>2021/11/16 10:15:21</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211116100352-0323 </td>
+      <td>2021/11/16 10:03:52</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211116093826-0322 </td>
+      <td>2021/11/16 09:38:26</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211116023458-0321 </td>
+      <td>2021/11/16 02:34:58</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FAILED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211115023458-0320 </td>
+      <td>2021/11/15 02:34:58</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FAILED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211114023457-0319 </td>
+      <td>2021/11/14 02:34:57</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FAILED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211113023457-0318 </td>
+      <td>2021/11/13 02:34:57</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FAILED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211112163716-0317 </td>
+      <td>2021/11/12 16:37:16</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCheckCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211112162918-0316 </td>
+      <td>2021/11/12 16:29:18</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCheckCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211112162743-0315 </td>
+      <td>2021/11/12 16:27:43</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211112162639-0314 </td>
+      <td>2021/11/12 16:26:39</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>scala.com.jshcbd.EntityBuild</td>
+      
+    </tr><tr>
+      <td>driver-20211112161823-0313 </td>
+      <td>2021/11/12 16:18:23</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>FAILED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>scala.com.jshcbd.EntityBuild</td>
+      
+    </tr><tr>
+      <td>driver-20211112145213-0312 </td>
+      <td>2021/11/12 14:52:13</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211112144219-0311 </td>
+      <td>2021/11/12 14:42:19</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCheckCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211112143957-0310 </td>
+      <td>2021/11/12 14:39:57</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCheckCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211112142948-0309 </td>
+      <td>2021/11/12 14:29:48</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211112142715-0308 </td>
+      <td>2021/11/12 14:27:15</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211112142555-0307 </td>
+      <td>2021/11/12 14:25:55</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211112142526-0306 </td>
+      <td>2021/11/12 14:25:26</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211112142454-0305 </td>
+      <td>2021/11/12 14:24:54</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211112142212-0304 </td>
+      <td>2021/11/12 14:22:12</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>scala.com.jshcbd.EntityBuild</td>
+      
+    </tr><tr>
+      <td>driver-20211112141825-0303 </td>
+      <td>2021/11/12 14:18:25</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>scala.com.jshcbd.EntityBuild</td>
+      
+    </tr><tr>
+      <td>driver-20211112141650-0302 </td>
+      <td>2021/11/12 14:16:50</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FAILED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>scala.com.jshcbd.EntityBuild</td>
+      
+    </tr><tr>
+      <td>driver-20211112023457-0301 </td>
+      <td>2021/11/12 02:34:57</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FAILED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211112023457-0300 </td>
+      <td>2021/11/12 02:34:57</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FAILED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211111145034-0299 </td>
+      <td>2021/11/11 14:50:34</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211111143044-0298 </td>
+      <td>2021/11/11 14:30:44</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211111102115-0297 </td>
+      <td>2021/11/11 10:21:15</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>scala.com.jshcbd.EntityBuild</td>
+      
+    </tr><tr>
+      <td>driver-20211111090603-0296 </td>
+      <td>2021/11/11 09:06:03</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211111023456-0295 </td>
+      <td>2021/11/11 02:34:56</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FAILED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211111023456-0294 </td>
+      <td>2021/11/11 02:34:56</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FAILED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211110161654-0293 </td>
+      <td>2021/11/10 16:16:54</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FAILED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>scala.com.jshcbd.EntityBuild</td>
+      
+    </tr><tr>
+      <td>driver-20211110142649-0292 </td>
+      <td>2021/11/10 14:26:49</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>scala.com.jshcbd.EntityBuild</td>
+      
+    </tr><tr>
+      <td>driver-20211110141845-0291 </td>
+      <td>2021/11/10 14:18:45</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211110141643-0290 </td>
+      <td>2021/11/10 14:16:43</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FAILED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211110141215-0289 </td>
+      <td>2021/11/10 14:12:15</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FAILED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>scala.com.jshcbd.EntityBuild</td>
+      
+    </tr><tr>
+      <td>driver-20211110141111-0288 </td>
+      <td>2021/11/10 14:11:11</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>scala.com.jshcbd.EntityBuild</td>
+      
+    </tr><tr>
+      <td>driver-20211110140614-0287 </td>
+      <td>2021/11/10 14:06:14</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FAILED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>scala.com.jshcbd.EntityBuild</td>
+      
+    </tr><tr>
+      <td>driver-20211110140552-0286 </td>
+      <td>2021/11/10 14:05:52</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FAILED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>scala.com.jshcbd.EntityBuild</td>
+      
+    </tr><tr>
+      <td>driver-20211110140532-0285 </td>
+      <td>2021/11/10 14:05:32</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>scala.com.jshcbd.EntityBuild</td>
+      
+    </tr><tr>
+      <td>driver-20211110140311-0284 </td>
+      <td>2021/11/10 14:03:11</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>FAILED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>scala.com.jshcbd.EntityBuild</td>
+      
+    </tr><tr>
+      <td>driver-20211110092758-0283 </td>
+      <td>2021/11/10 09:27:58</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211110092311-0282 </td>
+      <td>2021/11/10 09:23:11</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCheckCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211110085307-0281 </td>
+      <td>2021/11/10 08:53:07</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCheckCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211110085022-0280 </td>
+      <td>2021/11/10 08:50:22</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211110023456-0279 </td>
+      <td>2021/11/10 02:34:56</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FAILED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211110023456-0278 </td>
+      <td>2021/11/10 02:34:56</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FAILED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211109182135-0277 </td>
+      <td>2021/11/09 18:21:35</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>scala.com.jshcbd.EntityBuild</td>
+      
+    </tr><tr>
+      <td>driver-20211109160633-0276 </td>
+      <td>2021/11/09 16:06:33</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211109145719-0275 </td>
+      <td>2021/11/09 14:57:19</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211109145600-0274 </td>
+      <td>2021/11/09 14:56:00</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FAILED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211109145405-0273 </td>
+      <td>2021/11/09 14:54:05</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>scala.com.jshcbd.EntityBuild</td>
+      
+    </tr><tr>
+      <td>driver-20211109145305-0272 </td>
+      <td>2021/11/09 14:53:05</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>scala.com.jshcbd.EntityBuild</td>
+      
+    </tr><tr>
+      <td>driver-20211109145036-0271 </td>
+      <td>2021/11/09 14:50:36</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211109101543-0270 </td>
+      <td>2021/11/09 10:15:43</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211109101218-0269 </td>
+      <td>2021/11/09 10:12:18</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>FAILED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211109100745-0268 </td>
+      <td>2021/11/09 10:07:45</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211109100659-0267 </td>
+      <td>2021/11/09 10:06:59</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FAILED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211109100620-0266 </td>
+      <td>2021/11/09 10:06:20</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211109100557-0265 </td>
+      <td>2021/11/09 10:05:57</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211109100504-0264 </td>
+      <td>2021/11/09 10:05:04</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211109095722-0263 </td>
+      <td>2021/11/09 09:57:22</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>FAILED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211109095323-0262 </td>
+      <td>2021/11/09 09:53:23</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>FAILED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211109094810-0261 </td>
+      <td>2021/11/09 09:48:10</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>FAILED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211109094546-0260 </td>
+      <td>2021/11/09 09:45:46</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FAILED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211109023456-0259 </td>
+      <td>2021/11/09 02:34:56</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FAILED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211109023456-0258 </td>
+      <td>2021/11/09 02:34:56</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>FAILED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211108174633-0257 </td>
+      <td>2021/11/08 17:46:33</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCheckCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211108165735-0256 </td>
+      <td>2021/11/08 16:57:35</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>KILLED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCheckCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211108165644-0255 </td>
+      <td>2021/11/08 16:56:44</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>KILLED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCheckCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211108163903-0254 </td>
+      <td>2021/11/08 16:39:03</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211108163317-0253 </td>
+      <td>2021/11/08 16:33:17</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>scala.com.jshcbd.EntityBuild</td>
+      
+    </tr><tr>
+      <td>driver-20211108162700-0252 </td>
+      <td>2021/11/08 16:27:00</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211108162253-0251 </td>
+      <td>2021/11/08 16:22:53</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211108160348-0250 </td>
+      <td>2021/11/08 16:03:48</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>scala.com.jshcbd.EntityBuild</td>
+      
+    </tr><tr>
+      <td>driver-20211108153642-0249 </td>
+      <td>2021/11/08 15:36:42</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211108151314-0248 </td>
+      <td>2021/11/08 15:13:14</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>scala.com.jshcbd.EntityBuild</td>
+      
+    </tr><tr>
+      <td>driver-20211108151226-0247 </td>
+      <td>2021/11/08 15:12:26</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>KILLED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211108151140-0246 </td>
+      <td>2021/11/08 15:11:40</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>KILLED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211108150235-0245 </td>
+      <td>2021/11/08 15:02:35</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>FAILED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>scala.com.jshcbd.EntityBuild</td>
+      
+    </tr><tr>
+      <td>driver-20211108142937-0244 </td>
+      <td>2021/11/08 14:29:37</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCheckCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211108142304-0243 </td>
+      <td>2021/11/08 14:23:04</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211108140509-0242 </td>
+      <td>2021/11/08 14:05:09</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>scala.com.jshcbd.EntityBuild</td>
+      
+    </tr><tr>
+      <td>driver-20211108133926-0241 </td>
+      <td>2021/11/08 13:39:26</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCheckCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211108110932-0240 </td>
+      <td>2021/11/08 11:09:32</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>scala.com.jshcbd.EntityBuild</td>
+      
+    </tr><tr>
+      <td>driver-20211108110038-0239 </td>
+      <td>2021/11/08 11:00:38</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>scala.com.jshcbd.EntityBuild</td>
+      
+    </tr><tr>
+      <td>driver-20211108100219-0238 </td>
+      <td>2021/11/08 10:02:19</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211108100020-0237 </td>
+      <td>2021/11/08 10:00:20</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>KILLED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211108095853-0236 </td>
+      <td>2021/11/08 09:58:53</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>scala.com.jshcbd.EntityBuild</td>
+      
+    </tr><tr>
+      <td>driver-20211108095750-0235 </td>
+      <td>2021/11/08 09:57:50</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>KILLED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211108095715-0234 </td>
+      <td>2021/11/08 09:57:15</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>KILLED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211108094407-0233 </td>
+      <td>2021/11/08 09:44:07</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>KILLED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211108094307-0232 </td>
+      <td>2021/11/08 09:43:07</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>scala.com.jshcbd.EntityBuild</td>
+      
+    </tr><tr>
+      <td>driver-20211108094029-0231 </td>
+      <td>2021/11/08 09:40:29</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>scala.com.jshcbd.EntityBuild</td>
+      
+    </tr><tr>
+      <td>driver-20211108093434-0230 </td>
+      <td>2021/11/08 09:34:34</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>scala.com.jshcbd.EntityBuild</td>
+      
+    </tr><tr>
+      <td>driver-20211108091128-0229 </td>
+      <td>2021/11/08 09:11:28</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>scala.com.jshcbd.EntityBuild</td>
+      
+    </tr><tr>
+      <td>driver-20211108023455-0228 </td>
+      <td>2021/11/08 02:34:55</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FAILED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211108023455-0227 </td>
+      <td>2021/11/08 02:34:55</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FAILED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211107023455-0226 </td>
+      <td>2021/11/07 02:34:55</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>FAILED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211107023455-0225 </td>
+      <td>2021/11/07 02:34:55</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FAILED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211106023456-0224 </td>
+      <td>2021/11/06 02:34:56</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FAILED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211106023455-0223 </td>
+      <td>2021/11/06 02:34:55</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FAILED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211105163721-0222 </td>
+      <td>2021/11/05 16:37:21</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCheckCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211105161153-0221 </td>
+      <td>2021/11/05 16:11:53</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211105155649-0220 </td>
+      <td>2021/11/05 15:56:49</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FAILED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211105134836-0219 </td>
+      <td>2021/11/05 13:48:36</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FAILED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>scala.com.jshcbd.EntityBuild</td>
+      
+    </tr><tr>
+      <td>driver-20211105134621-0218 </td>
+      <td>2021/11/05 13:46:21</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>scala.com.jshcbd.EntityBuild</td>
+      
+    </tr><tr>
+      <td>driver-20211105113859-0217 </td>
+      <td>2021/11/05 11:38:59</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211105113824-0216 </td>
+      <td>2021/11/05 11:38:24</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211105113805-0215 </td>
+      <td>2021/11/05 11:38:05</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211105113739-0214 </td>
+      <td>2021/11/05 11:37:39</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211105113711-0213 </td>
+      <td>2021/11/05 11:37:11</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211105104602-0212 </td>
+      <td>2021/11/05 10:46:02</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>scala.com.jshcbd.EntityBuild</td>
+      
+    </tr><tr>
+      <td>driver-20211105093757-0211 </td>
+      <td>2021/11/05 09:37:57</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>scala.com.jshcbd.EntityBuild</td>
+      
+    </tr><tr>
+      <td>driver-20211105093708-0210 </td>
+      <td>2021/11/05 09:37:08</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>scala.com.jshcbd.EntityBuild</td>
+      
+    </tr><tr>
+      <td>driver-20211105023454-0209 </td>
+      <td>2021/11/05 02:34:54</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>FAILED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211105023454-0208 </td>
+      <td>2021/11/05 02:34:54</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FAILED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211104161552-0207 </td>
+      <td>2021/11/04 16:15:52</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCheckCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211104110124-0206 </td>
+      <td>2021/11/04 11:01:24</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCheckCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211104104740-0205 </td>
+      <td>2021/11/04 10:47:40</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211104103528-0204 </td>
+      <td>2021/11/04 10:35:28</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>KILLED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211104023454-0203 </td>
+      <td>2021/11/04 02:34:54</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>FAILED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211104023454-0202 </td>
+      <td>2021/11/04 02:34:54</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FAILED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211103172655-0201 </td>
+      <td>2021/11/03 17:26:55</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211103172613-0200 </td>
+      <td>2021/11/03 17:26:13</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>KILLED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211103172447-0199 </td>
+      <td>2021/11/03 17:24:47</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>scala.com.jshcbd.EntityBuild</td>
+      
+    </tr><tr>
+      <td>driver-20211103172238-0198 </td>
+      <td>2021/11/03 17:22:38</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>scala.com.jshcbd.EntityBuild</td>
+      
+    </tr><tr>
+      <td>driver-20211103170742-0197 </td>
+      <td>2021/11/03 17:07:42</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>KILLED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211103165545-0196 </td>
+      <td>2021/11/03 16:55:45</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>KILLED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211103162311-0195 </td>
+      <td>2021/11/03 16:23:11</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>KILLED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211103160214-0194 </td>
+      <td>2021/11/03 16:02:14</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="2048">
+        2.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.datamanage.DatamanageMain.DatamanageMain</td>
+      
+    </tr><tr>
+      <td>driver-20211103155937-0193 </td>
+      <td>2021/11/03 15:59:37</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>scala.com.jshcbd.EntityBuild</td>
+      
+    </tr><tr>
+      <td>driver-20211103155351-0192 </td>
+      <td>2021/11/03 15:53:51</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>scala.com.jshcbd.EntityBuild</td>
+      
+    </tr><tr>
+      <td>driver-20211103153845-0191 </td>
+      <td>2021/11/03 15:38:45</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>scala.com.jshcbd.EntityBuild</td>
+      
+    </tr><tr>
+      <td>driver-20211103153802-0190 </td>
+      <td>2021/11/03 15:38:02</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>scala.com.jshcbd.EntityBuild</td>
+      
+    </tr><tr>
+      <td>driver-20211103153328-0189 </td>
+      <td>2021/11/03 15:33:28</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>scala.com.jshcbd.EntityBuild</td>
+      
+    </tr><tr>
+      <td>driver-20211103152839-0188 </td>
+      <td>2021/11/03 15:28:39</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>scala.com.jshcbd.EntityBuild</td>
+      
+    </tr><tr>
+      <td>driver-20211103143543-0187 </td>
+      <td>2021/11/03 14:35:43</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>KILLED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211103143259-0186 </td>
+      <td>2021/11/03 14:32:59</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCheckCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211103143126-0185 </td>
+      <td>2021/11/03 14:31:26</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211103134913-0184 </td>
+      <td>2021/11/03 13:49:13</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FINISHED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211103134829-0183 </td>
+      <td>2021/11/03 13:48:29</td>
+      <td><a href="http://10.232.3.217:8081">
+            worker-20211008172707-10.232.3.217-34089
+          </a>
+      </td>
+      <td>FAILED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211103105526-0177 </td>
+      <td>2021/11/03 10:55:26</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>KILLED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211103100404-0170 </td>
+      <td>2021/11/03 10:04:04</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>KILLED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211103100313-0169 </td>
+      <td>2021/11/03 10:03:13</td>
+      <td><a href="http://10.232.3.221:8081">
+            worker-20211008172707-10.232.3.221-41595
+          </a>
+      </td>
+      <td>KILLED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr><tr>
+      <td>driver-20211027175412-0140 </td>
+      <td>2021/10/27 17:54:12</td>
+      <td><a href="http://10.232.3.220:8081">
+            worker-20211008172707-10.232.3.220-42856
+          </a>
+      </td>
+      <td>KILLED</td>
+      <td sorttable_customkey="1">
+        1
+      </td>
+      <td sorttable_customkey="3072">
+        3.0 GiB
+      </td>
+      <td></td>
+      <td>com.hcdsj.hudi.DataCleanCenter</td>
+      
+    </tr>
+      </tbody>
+    </table>
+                  </div>
+                </div>
+              </div>
+        </div>
+            </div>
+          </div>
+        </div>
+      </body>
+    </html>
